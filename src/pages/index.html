@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% set pageId = "page-home" %}
+<!-- {% set pageId = "page-home" %} -->
 <html lang="pt-br">
 
     <head>
@@ -12,7 +12,39 @@
     </head>
     
     <body>
-        <h1>Starting a new project</h1>
+        <header>
+            <div class="top">
+                <h2>Esse projeto foi desenvolvido para auxiliar estudantes do vestibular, revisando as matérias mais comuns nos vestibulares</h2>
+                <div class="vestibulares">
+                    <h3>Vestibulares</h3>
+                    <select name="enem">
+                        <option disabled selected>ENEM</option>
+                        <optgroup label="Exatas">
+                            <option id="matematica">Matemática</option>
+                            <option id="quimica">Química</option>
+                            <option id="fisica">Física</option>
+                            <option id="biologia">Biologia</option>
+                        </optgroup><!--exatas-->
+                        <optgroup label="Humanas">
+                            <option id="portugues">Português</option>
+                            <option id="geografia">Geografia</option>
+                            <option id="historia">História</option>
+                            <option id="filosofiasociologia">Filosofia e Sociologia</option>
+                        </optgroup><!--humanas-->
+                    </select><!--enem-->
+                    <select name="uerj">
+                        <option disabled selected>UERJ</option>
+                        <optgroup label="Linguagens">
+                            <option id="Lportugues">Língua Portuguesa</option>
+                            <option id="Lestrangeira">Língua Estrangeira</option>"
+                            <option id="literatura">Literatura</option>
+                        </optgroup><!--Linguagens-->
+                    </select><!--uerj-->
+                </div>
+            </div><!--top-->
+            
+        </header><!--header>-->
+        
 
         <script src="scripts/index.js"></script>
     </body>

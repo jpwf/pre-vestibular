@@ -1,3 +1,4 @@
+const port = 3000
 const express = require("express")
 const server = express()
 server.use(express.static("public"))
@@ -13,4 +14,6 @@ server.get('/', (req,res) =>{
     return res.render("index.html")
 })
 
-server.listen(4000)
+server.listen(port, function(){
+    console.log(`Servidor local na porta: ${port}`)
+})
