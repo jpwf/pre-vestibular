@@ -16,7 +16,7 @@ header{
 .vestibulares{
     margin: 10% 10%;
 }
-.vestibulares select{
+.vestibulares .enem{
     display:flex;
 
 }
