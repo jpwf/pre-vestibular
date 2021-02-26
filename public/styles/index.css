@@ -3,10 +3,12 @@ html, body{
 }
 
 header{
-    height:100%;
+    height:50%;
     width:100%;
 }
-
+.clear{
+    clear:both;
+}
 .top{
     text-align:center;
     background-color:gray;
@@ -32,9 +34,11 @@ header{
     background-color:purple;
     width:100%;
     color:white;
+    
 }
 
 .explanation{
+    margin-bottom:-5%;
     width:100%;
     margin-left:-0.3%;
     margin-top:4%;
@@ -50,14 +54,17 @@ header{
     background-color:lightblue;
     width:6%;
     margin-top:5%;
+    margin-bottom:-5%;
     margin-left:10%;
 }
 .vestibulares .enem{
     display:flex;
+    margin-bottom:-5%;
     width:50%;
 }
 .vestibulares .uerj{
     width:50%;
+    margin-bottom:-5%;
 }
 
 .vestibulares .enem:hover{
@@ -67,4 +74,16 @@ header{
 .vestibulares .uerj:hover{
     transition-duration: 300ms;
     background-color:green;
+}
+
+.content{
+    text-align: center;
+    width:100%;
+    height:50%;
+
+}
+.content .tips{
+    width:50%;
+    margin-left:25%;
+    background-color:white;
 }
