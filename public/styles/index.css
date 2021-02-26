@@ -7,16 +7,64 @@ header{
     width:100%;
 }
 
-.top h2{
-    display:flex;
-    margin:10% 10%;
-
+.top{
+    text-align:center;
+    background-color:gray;
+    height:30%;
+    width:30%;
+    margin-left:35%;
+    
 }
 
+.top .title{
+    
+    margin-top:1%;
+    font-size:150%;
+    margin-left:-0.3%;
+    background-color:purple;
+    width:100%;
+    color:white;
+}
+.top .complement{
+    
+    margin-top:1%;
+    margin-left:-0.3%;
+    background-color:purple;
+    width:100%;
+    color:white;
+}
+
+.explanation{
+    width:100%;
+    margin-left:-0.3%;
+    margin-top:4%;
+    background-color:rgb(138, 193, 242);
+}
+.explanation p{
+    
+    font-size:150%;
+}
+
+
 .vestibulares{
-    margin: 10% 10%;
+    background-color:lightblue;
+    width:6%;
+    margin-top:5%;
+    margin-left:10%;
 }
 .vestibulares .enem{
     display:flex;
+    width:50%;
+}
+.vestibulares .uerj{
+    width:50%;
+}
 
+.vestibulares .enem:hover{
+    transition-duration: 300ms;
+    background-color:green;
+}
+.vestibulares .uerj:hover{
+    transition-duration: 300ms;
+    background-color:green;
 }
