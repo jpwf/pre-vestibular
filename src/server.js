@@ -13,6 +13,12 @@ nunjucks.configure("src/pages", {
 server.get('/', (req,res) =>{
     return res.render("index.html")
 })
+server.get('/uerj', (req,res) =>{
+    return res.render("uerj.html")
+})
+server.get('/enem', (req,res) =>{
+    return res.render("enem.html")
+})
 
 server.listen(port, function(){
     console.log(`Servidor local na porta: ${port}`)
