@@ -8,3 +8,20 @@ html, body{
     background-color:aliceblue;
     
 }
+
+@media screen and (max-width:768px) {
+  
+  .top{
+    width:50%;
+    height:20%;
+    font-size:20%;
+    margin-left:25%;
+  }
+  .content{
+    width:80%;
+    font-size:20%;
+    height:40%;
+    margin-left:8%;
+    margin-top:-60%;
+  }
+}
