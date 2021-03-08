@@ -19,6 +19,9 @@ server.get('/uerj', (req,res) =>{
 server.get('/enem', (req,res) =>{
     return res.render("enem.html")
 })
+server.get('/math-enem', (req,res) =>{
+    return res.render("math-enem.html")
+})
 
 server.listen(port, function(){
     console.log(`Servidor local na porta: ${port}`)

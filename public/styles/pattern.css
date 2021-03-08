@@ -2,11 +2,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    background-color:white;
 }
 
 html, body{
-    background-color:aliceblue;
-    
+    background-color:white;
+    text-decoration:none;
 }
 
 @media screen and (max-width:768px) {
@@ -25,3 +26,5 @@ html, body{
     margin-top:-60%;
   }
 }
+
+

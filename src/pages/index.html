@@ -15,8 +15,7 @@
         <header>
             <div class="top">
                 <div class="title"><h1>Pré-vestibular buddy</h1></div><!--title-->
-                <div class="complement"><h2>Seu parceiro para o vestibular</h2></div><!--complement-->
-                <div class="explanation">
+                <div class="complement"><h2>Seu parceiro para o vestibular</h2></div><!--complement-->                <div class="explanation">
                     <p>Bom, com o intuito de ajudar, estou fazendo este site para trazer mais segurança ao estudante do vestibular.<br>trazendo consigo, este site vai contar com seções de exercícios(mesmo que alguns poucos), sobre cada vestibular.</p>
                 </div><!--explanation-->
                 
@@ -24,27 +23,14 @@
             
                 <div class="vestibulares">
                     <h3>Vestibulares</h3>
-                    <select id="vestibular-list">
-                        <optgroup>
-                            <option>Escolha o vestibular</option>
-                            <option>ENEM</option>
-                            <option>UERJ</option>
-                        </optgroup>
-                    </select>
-                    
-
-                    
-                    <!-- <div class="enem">
-                        <a href="/enem" id="enem">ENEM</a>
-                    </div>
-                    <div class="uerj">
-                        <a href="/uerj" id="uerj">UERJ</a>
-                    </div>
-                     Função sem utilidade por enquanto-->
-                    
-                </div>
-            
-            
+    		    <div class="vestibular-list">
+			<div class="enem">
+				<button id="enem-b"><a href="/enem">ENEM</a></button>
+                        </div>
+        		<div class="uerj">
+				<button id="uerj-b"><a href="/uerj">UERJ</a></button>
+			</div>
+		    </div>            
         </header><!--header>-->
         <div class="clear"></div><!--clear-->
         
@@ -73,7 +59,18 @@
             
         </div><!--content-->
 
-        <script src="/public/scripts/index.js"></script>
+        <script>
+
+		document.getElementbyId("vestibular-list").onchange=function(){
+			if(this.value=="ENEM"){
+				window.location.href="/enem"
+			}
+			if(this.value=="UERJ"){
+				window.location.href="/uerj"
+			}
+		}
+	</script>
+
     </body>
 
 
