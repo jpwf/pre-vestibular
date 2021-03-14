@@ -6,8 +6,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pré-vestibular buddy</title>
-        <link href="/public/styles/index.css" rel="stylesheet" >
-        <link href="/public/styles/pattern.css" rel="stylesheet" >
+        <link href="/public/styles/index.css" rel="stylesheet" type="text/css">
+        <link href="/public/styles/pattern.css" rel="stylesheet" type="text/css" >
         
     </head>
     
@@ -26,7 +26,7 @@
                     <h3>Vestibulares</h3>
                     <select id="vestibular-list">
                         <optgroup>
-                            <option>Escolha o vestibular</option>
+                            <option disabled selected>Escolha o vestibular</option>
                             <option>ENEM</option>
                             <option>UERJ</option>
                         </optgroup>
@@ -72,8 +72,9 @@
         </div><!--tips-->
             
         </div><!--content-->
-
-        <script src="/public/scripts/index.js"></script>
+        {% block scripts %}
+            <script src="/scripts/home.js"></script>
+        {% endblock scripts %}
     </body>
 
 
